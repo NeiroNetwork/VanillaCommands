@@ -1,5 +1,5 @@
-name: PluginTemplate
+name: VanillaCommands
 version: 0.0.1
-main: NeiroNetwork\PluginTemplate\Main
+main: NeiroNetwork\VanillaCommands\Main
 api: 4.0.0
-src-namespace-prefix: NeiroNetwork\PluginTemplate
+src-namespace-prefix: NeiroNetwork\VanillaCommands
