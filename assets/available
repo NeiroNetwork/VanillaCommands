@@ -1,0 +1,2818 @@
+pocketmine\network\mcpe\protocol\AvailableCommandsPacket Object
+(
+    [commandData] => Array
+        (
+            [ban] => pocketmine\network\mcpe\protocol\types\command\CommandData Object
+                (
+                    [name] => ban
+                    [description] => 指定したプレイヤーがこのサーバーを利用できないようにします
+                    [flags] => 0
+                    [permission] => 0
+                    [aliases] =>
+                    [overloads] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => pocketmine\network\mcpe\protocol\types\command\CommandParameter Object
+                                        (
+                                            [paramName] => args
+                                            [paramType] => 1048629
+                                            [isOptional] => 1
+                                            [flags] => 0
+                                            [enum] =>
+                                            [postfix] =>
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [ban-ip] => pocketmine\network\mcpe\protocol\types\command\CommandData Object
+                (
+                    [name] => ban-ip
+                    [description] => 指定した IP アドレスがこのサーバーを利用できないようにします
+                    [flags] => 0
+                    [permission] => 0
+                    [aliases] =>
+                    [overloads] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => pocketmine\network\mcpe\protocol\types\command\CommandParameter Object
+                                        (
+                                            [paramName] => args
+                                            [paramType] => 1048629
+                                            [isOptional] => 1
+                                            [flags] => 0
+                                            [enum] =>
+                                            [postfix] =>
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [banlist] => pocketmine\network\mcpe\protocol\types\command\CommandData Object
+                (
+                    [name] => banlist
+                    [description] => このサーバーからアクセスが禁止されているすべてのプレイヤーを表示します
+                    [flags] => 0
+                    [permission] => 0
+                    [aliases] =>
+                    [overloads] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => pocketmine\network\mcpe\protocol\types\command\CommandParameter Object
+                                        (
+                                            [paramName] => args
+                                            [paramType] => 1048629
+                                            [isOptional] => 1
+                                            [flags] => 0
+                                            [enum] =>
+                                            [postfix] =>
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [clear] => pocketmine\network\mcpe\protocol\types\command\CommandData Object
+                (
+                    [name] => clear
+                    [description] => プレイヤーのインベントリからアイテムを消去します
+                    [flags] => 0
+                    [permission] => 0
+                    [aliases] =>
+                    [overloads] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => pocketmine\network\mcpe\protocol\types\command\CommandParameter Object
+                                        (
+                                            [paramName] => args
+                                            [paramType] => 1048629
+                                            [isOptional] => 1
+                                            [flags] => 0
+                                            [enum] =>
+                                            [postfix] =>
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [defaultgamemode] => pocketmine\network\mcpe\protocol\types\command\CommandData Object
+                (
+                    [name] => defaultgamemode
+                    [description] => デフォルトのゲームモードを設定します
+                    [flags] => 0
+                    [permission] => 0
+                    [aliases] =>
+                    [overloads] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => pocketmine\network\mcpe\protocol\types\command\CommandParameter Object
+                                        (
+                                            [paramName] => args
+                                            [paramType] => 1048629
+                                            [isOptional] => 1
+                                            [flags] => 0
+                                            [enum] =>
+                                            [postfix] =>
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [deop] => pocketmine\network\mcpe\protocol\types\command\CommandData Object
+                (
+                    [name] => deop
+                    [description] => 指定したプレイヤーの管理者ステータスを剥奪します
+                    [flags] => 0
+                    [permission] => 0
+                    [aliases] =>
+                    [overloads] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => pocketmine\network\mcpe\protocol\types\command\CommandParameter Object
+                                        (
+                                            [paramName] => args
+                                            [paramType] => 1048629
+                                            [isOptional] => 1
+                                            [flags] => 0
+                                            [enum] =>
+                                            [postfix] =>
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [difficulty] => pocketmine\network\mcpe\protocol\types\command\CommandData Object
+                (
+                    [name] => difficulty
+                    [description] => ゲームの難易度を設定します
+                    [flags] => 0
+                    [permission] => 0
+                    [aliases] =>
+                    [overloads] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => pocketmine\network\mcpe\protocol\types\command\CommandParameter Object
+                                        (
+                                            [paramName] => args
+                                            [paramType] => 1048629
+                                            [isOptional] => 1
+                                            [flags] => 0
+                                            [enum] =>
+                                            [postfix] =>
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [effect] => pocketmine\network\mcpe\protocol\types\command\CommandData Object
+                (
+                    [name] => effect
+                    [description] => プレイヤーに/から効果を付与/除去します
+                    [flags] => 0
+                    [permission] => 0
+                    [aliases] =>
+                    [overloads] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => pocketmine\network\mcpe\protocol\types\command\CommandParameter Object
+                                        (
+                                            [paramName] => args
+                                            [paramType] => 1048629
+                                            [isOptional] => 1
+                                            [flags] => 0
+                                            [enum] =>
+                                            [postfix] =>
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [enchant] => pocketmine\network\mcpe\protocol\types\command\CommandData Object
+                (
+                    [name] => enchant
+                    [description] => アイテムにエンチャントを付加します
+                    [flags] => 0
+                    [permission] => 0
+                    [aliases] =>
+                    [overloads] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => pocketmine\network\mcpe\protocol\types\command\CommandParameter Object
+                                        (
+                                            [paramName] => args
+                                            [paramType] => 1048629
+                                            [isOptional] => 1
+                                            [flags] => 0
+                                            [enum] =>
+                                            [postfix] =>
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [gamemode] => pocketmine\network\mcpe\protocol\types\command\CommandData Object
+                (
+                    [name] => gamemode
+                    [description] => プレイヤーのゲームモードを変更します
+                    [flags] => 0
+                    [permission] => 0
+                    [aliases] =>
+                    [overloads] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => pocketmine\network\mcpe\protocol\types\command\CommandParameter Object
+                                        (
+                                            [paramName] => args
+                                            [paramType] => 1048629
+                                            [isOptional] => 1
+                                            [flags] => 0
+                                            [enum] =>
+                                            [postfix] =>
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [gc] => pocketmine\network\mcpe\protocol\types\command\CommandData Object
+                (
+                    [name] => gc
+                    [description] => ガベージコレクションタスクを起動します
+                    [flags] => 0
+                    [permission] => 0
+                    [aliases] =>
+                    [overloads] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => pocketmine\network\mcpe\protocol\types\command\CommandParameter Object
+                                        (
+                                            [paramName] => args
+                                            [paramType] => 1048629
+                                            [isOptional] => 1
+                                            [flags] => 0
+                                            [enum] =>
+                                            [postfix] =>
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [give] => pocketmine\network\mcpe\protocol\types\command\CommandData Object
+                (
+                    [name] => give
+                    [description] => 指定したプレイヤーに一定量のアイテムを与えます
+                    [flags] => 0
+                    [permission] => 0
+                    [aliases] =>
+                    [overloads] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => pocketmine\network\mcpe\protocol\types\command\CommandParameter Object
+                                        (
+                                            [paramName] => args
+                                            [paramType] => 1048629
+                                            [isOptional] => 1
+                                            [flags] => 0
+                                            [enum] =>
+                                            [postfix] =>
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [kick] => pocketmine\network\mcpe\protocol\types\command\CommandData Object
+                (
+                    [name] => kick
+                    [description] => 指定したプレイヤーをサーバーから追い出します
+                    [flags] => 0
+                    [permission] => 0
+                    [aliases] =>
+                    [overloads] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => pocketmine\network\mcpe\protocol\types\command\CommandParameter Object
+                                        (
+                                            [paramName] => args
+                                            [paramType] => 1048629
+                                            [isOptional] => 1
+                                            [flags] => 0
+                                            [enum] =>
+                                            [postfix] =>
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [kill] => pocketmine\network\mcpe\protocol\types\command\CommandData Object
+                (
+                    [name] => kill
+                    [description] => 自殺または他のプレイヤーをキルします
+                    [flags] => 0
+                    [permission] => 0
+                    [aliases] => pocketmine\network\mcpe\protocol\types\command\CommandEnum Object
+                        (
+                            [enumName:pocketmine\network\mcpe\protocol\types\command\CommandEnum:private] => KillAliases                            [enumValues:pocketmine\network\mcpe\protocol\types\command\CommandEnum:private] => Array
+                                (
+                                    [0] => suicide
+                                    [1] => kill
+                                )
+
+                        )
+
+                    [overloads] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => pocketmine\network\mcpe\protocol\types\command\CommandParameter Object
+                                        (
+                                            [paramName] => args
+                                            [paramType] => 1048629
+                                            [isOptional] => 1
+                                            [flags] => 0
+                                            [enum] =>
+                                            [postfix] =>
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [list] => pocketmine\network\mcpe\protocol\types\command\CommandData Object
+                (
+                    [name] => list
+                    [description] => すべてのオンラインプレイヤーを一覧表示します
+                    [flags] => 0
+                    [permission] => 0
+                    [aliases] =>
+                    [overloads] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => pocketmine\network\mcpe\protocol\types\command\CommandParameter Object
+                                        (
+                                            [paramName] => args
+                                            [paramType] => 1048629
+                                            [isOptional] => 1
+                                            [flags] => 0
+                                            [enum] =>
+                                            [postfix] =>
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [me] => pocketmine\network\mcpe\protocol\types\command\CommandData Object
+                (
+                    [name] => me
+                    [description] => チャットで指定したアクションを実行します
+                    [flags] => 0
+                    [permission] => 0
+                    [aliases] =>
+                    [overloads] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => pocketmine\network\mcpe\protocol\types\command\CommandParameter Object
+                                        (
+                                            [paramName] => args
+                                            [paramType] => 1048629
+                                            [isOptional] => 1
+                                            [flags] => 0
+                                            [enum] =>
+                                            [postfix] =>
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [op] => pocketmine\network\mcpe\protocol\types\command\CommandData Object
+                (
+                    [name] => op
+                    [description] => 指定したプレイヤーに管理者ステータスを付与します
+                    [flags] => 0
+                    [permission] => 0
+                    [aliases] =>
+                    [overloads] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => pocketmine\network\mcpe\protocol\types\command\CommandParameter Object
+                                        (
+                                            [paramName] => args
+                                            [paramType] => 1048629
+                                            [isOptional] => 1
+                                            [flags] => 0
+                                            [enum] =>
+                                            [postfix] =>
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [pardon] => pocketmine\network\mcpe\protocol\types\command\CommandData Object
+                (
+                    [name] => pardon
+                    [description] => 指定したプレイヤーがこのサーバーを利用できるようにします
+                    [flags] => 0
+                    [permission] => 0
+                    [aliases] => pocketmine\network\mcpe\protocol\types\command\CommandEnum Object
+                        (
+                            [enumName:pocketmine\network\mcpe\protocol\types\command\CommandEnum:private] => PardonAliases
+                            [enumValues:pocketmine\network\mcpe\protocol\types\command\CommandEnum:private] => Array
+                                (
+                                    [0] => unban
+                                    [1] => pardon
+                                )
+
+                        )
+
+                    [overloads] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => pocketmine\network\mcpe\protocol\types\command\CommandParameter Object
+                                        (
+                                            [paramName] => args
+                                            [paramType] => 1048629
+                                            [isOptional] => 1
+                                            [flags] => 0
+                                            [enum] =>
+                                            [postfix] =>
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [pardon-ip] => pocketmine\network\mcpe\protocol\types\command\CommandData Object
+                (
+                    [name] => pardon-ip
+                    [description] => 指定した IP アドレスがこのサーバーを利用できるようにします
+                    [flags] => 0
+                    [permission] => 0
+                    [aliases] => pocketmine\network\mcpe\protocol\types\command\CommandEnum Object
+                        (
+                            [enumName:pocketmine\network\mcpe\protocol\types\command\CommandEnum:private] => Pardon-ipAliases
+                            [enumValues:pocketmine\network\mcpe\protocol\types\command\CommandEnum:private] => Array
+                                (
+                                    [0] => unban-ip
+                                    [1] => pardon-ip
+                                )
+
+                        )
+
+                    [overloads] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => pocketmine\network\mcpe\protocol\types\command\CommandParameter Object
+                                        (
+                                            [paramName] => args
+                                            [paramType] => 1048629
+                                            [isOptional] => 1
+                                            [flags] => 0
+                                            [enum] =>
+                                            [postfix] =>
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [particle] => pocketmine\network\mcpe\protocol\types\command\CommandData Object
+                (
+                    [name] => particle
+                    [description] => ワールドにパーティクルを追加します
+                    [flags] => 0
+                    [permission] => 0
+                    [aliases] =>
+                    [overloads] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => pocketmine\network\mcpe\protocol\types\command\CommandParameter Object
+                                        (
+                                            [paramName] => args
+                                            [paramType] => 1048629
+                                            [isOptional] => 1
+                                            [flags] => 0
+                                            [enum] =>
+                                            [postfix] =>
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [plugins] => pocketmine\network\mcpe\protocol\types\command\CommandData Object
+                (
+                    [name] => plugins
+                    [description] => サーバー上で実行されているプラグインの一覧を取得します
+                    [flags] => 0
+                    [permission] => 0
+                    [aliases] => pocketmine\network\mcpe\protocol\types\command\CommandEnum Object
+                        (
+                            [enumName:pocketmine\network\mcpe\protocol\types\command\CommandEnum:private] => PluginsAliases
+                            [enumValues:pocketmine\network\mcpe\protocol\types\command\CommandEnum:private] => Array
+                                (
+                                    [0] => pl
+                                    [1] => plugins
+                                )
+
+                        )
+
+                    [overloads] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => pocketmine\network\mcpe\protocol\types\command\CommandParameter Object
+                                        (
+                                            [paramName] => args
+                                            [paramType] => 1048629
+                                            [isOptional] => 1
+                                            [flags] => 0
+                                            [enum] =>
+                                            [postfix] =>
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [save-all] => pocketmine\network\mcpe\protocol\types\command\CommandData Object
+                (
+                    [name] => save-all
+                    [description] => サーバーをディスクに保存します
+                    [flags] => 0
+                    [permission] => 0
+                    [aliases] =>
+                    [overloads] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => pocketmine\network\mcpe\protocol\types\command\CommandParameter Object
+                                        (
+                                            [paramName] => args
+                                            [paramType] => 1048629
+                                            [isOptional] => 1
+                                            [flags] => 0
+                                            [enum] =>
+                                            [postfix] =>
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [save-off] => pocketmine\network\mcpe\protocol\types\command\CommandData Object
+                (
+                    [name] => save-off
+                    [description] => サーバーの自動保存を無効にします
+                    [flags] => 0
+                    [permission] => 0
+                    [aliases] =>
+                    [overloads] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => pocketmine\network\mcpe\protocol\types\command\CommandParameter Object
+                                        (
+                                            [paramName] => args
+                                            [paramType] => 1048629
+                                            [isOptional] => 1
+                                            [flags] => 0
+                                            [enum] =>
+                                            [postfix] =>
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [save-on] => pocketmine\network\mcpe\protocol\types\command\CommandData Object
+                (
+                    [name] => save-on
+                    [description] => サーバーの自動保存を有効にします
+                    [flags] => 0
+                    [permission] => 0
+                    [aliases] =>
+                    [overloads] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => pocketmine\network\mcpe\protocol\types\command\CommandParameter Object
+                                        (
+                                            [paramName] => args
+                                            [paramType] => 1048629
+                                            [isOptional] => 1
+                                            [flags] => 0
+                                            [enum] =>
+                                            [postfix] =>
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [say] => pocketmine\network\mcpe\protocol\types\command\CommandData Object
+                (
+                    [name] => say
+                    [description] => Broadcasts the given message as the sender
+                    [flags] => 0
+                    [permission] => 0
+                    [aliases] =>
+                    [overloads] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => pocketmine\network\mcpe\protocol\types\command\CommandParameter Object
+                                        (
+                                            [paramName] => args
+                                            [paramType] => 1048629
+                                            [isOptional] => 1
+                                            [flags] => 0
+                                            [enum] =>
+                                            [postfix] =>
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [seed] => pocketmine\network\mcpe\protocol\types\command\CommandData Object
+                (
+                    [name] => seed
+                    [description] => ワールドのシード値を表示します
+                    [flags] => 0
+                    [permission] => 0
+                    [aliases] =>
+                    [overloads] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => pocketmine\network\mcpe\protocol\types\command\CommandParameter Object
+                                        (
+                                            [paramName] => args
+                                            [paramType] => 1048629
+                                            [isOptional] => 1
+                                            [flags] => 0
+                                            [enum] =>
+                                            [postfix] =>
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [setworldspawn] => pocketmine\network\mcpe\protocol\types\command\CommandData Object
+                (
+                    [name] => setworldspawn
+                    [description] => ワールドのスポーン地点を設定します。座標が指定されていない場合は、プレイヤーの座標が使用されます。
+                    [flags] => 0
+                    [permission] => 0
+                    [aliases] =>
+                    [overloads] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => pocketmine\network\mcpe\protocol\types\command\CommandParameter Object
+                                        (
+                                            [paramName] => args
+                                            [paramType] => 1048629
+                                            [isOptional] => 1
+                                            [flags] => 0
+                                            [enum] =>
+                                            [postfix] =>
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [spawnpoint] => pocketmine\network\mcpe\protocol\types\command\CommandData Object
+                (
+                    [name] => spawnpoint
+                    [description] => プレイヤーのスポーン地点を設定します
+                    [flags] => 0
+                    [permission] => 0
+                    [aliases] =>
+                    [overloads] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => pocketmine\network\mcpe\protocol\types\command\CommandParameter Object
+                                        (
+                                            [paramName] => args
+                                            [paramType] => 1048629
+                                            [isOptional] => 1
+                                            [flags] => 0
+                                            [enum] =>
+                                            [postfix] =>
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [status] => pocketmine\network\mcpe\protocol\types\command\CommandData Object
+                (
+                    [name] => status
+                    [description] => サーバーのパフォーマンスを読み出します。
+                    [flags] => 0
+                    [permission] => 0
+                    [aliases] =>
+                    [overloads] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => pocketmine\network\mcpe\protocol\types\command\CommandParameter Object
+                                        (
+                                            [paramName] => args
+                                            [paramType] => 1048629
+                                            [isOptional] => 1
+                                            [flags] => 0
+                                            [enum] =>
+                                            [postfix] =>
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [stop] => pocketmine\network\mcpe\protocol\types\command\CommandData Object
+                (
+                    [name] => stop
+                    [description] => サーバーを停止します
+                    [flags] => 0
+                    [permission] => 0
+                    [aliases] =>
+                    [overloads] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => pocketmine\network\mcpe\protocol\types\command\CommandParameter Object
+                                        (
+                                            [paramName] => args
+                                            [paramType] => 1048629
+                                            [isOptional] => 1
+                                            [flags] => 0
+                                            [enum] =>
+                                            [postfix] =>
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [tp] => pocketmine\network\mcpe\protocol\types\command\CommandData Object
+                (
+                    [name] => tp
+                    [description] => 指定したプレイヤー (または自分自身) を他のプレイヤーや座標にテレポートさせます
+                    [flags] => 0
+                    [permission] => 0
+                    [aliases] => pocketmine\network\mcpe\protocol\types\command\CommandEnum Object
+                        (
+                            [enumName:pocketmine\network\mcpe\protocol\types\command\CommandEnum:private] => TpAliases
+                            [enumValues:pocketmine\network\mcpe\protocol\types\command\CommandEnum:private] => Array
+                                (
+                                    [0] => teleport
+                                    [1] => tp
+                                )
+
+                        )
+
+                    [overloads] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => pocketmine\network\mcpe\protocol\types\command\CommandParameter Object
+                                        (
+                                            [paramName] => args
+                                            [paramType] => 1048629
+                                            [isOptional] => 1
+                                            [flags] => 0
+                                            [enum] =>
+                                            [postfix] =>
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [tell] => pocketmine\network\mcpe\protocol\types\command\CommandData Object
+                (
+                    [name] => tell
+                    [description] => 指定したプレイヤーにプライベートメッセージを送信します
+                    [flags] => 0
+                    [permission] => 0
+                    [aliases] => pocketmine\network\mcpe\protocol\types\command\CommandEnum Object
+                        (
+                            [enumName:pocketmine\network\mcpe\protocol\types\command\CommandEnum:private] => TellAliases                            [enumValues:pocketmine\network\mcpe\protocol\types\command\CommandEnum:private] => Array
+                                (
+                                    [0] => w
+                                    [1] => msg
+                                    [2] => tell
+                                )
+
+                        )
+
+                    [overloads] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => pocketmine\network\mcpe\protocol\types\command\CommandParameter Object
+                                        (
+                                            [paramName] => args
+                                            [paramType] => 1048629
+                                            [isOptional] => 1
+                                            [flags] => 0
+                                            [enum] =>
+                                            [postfix] =>
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [time] => pocketmine\network\mcpe\protocol\types\command\CommandData Object
+                (
+                    [name] => time
+                    [description] => 各ワールドの時刻を変更します
+                    [flags] => 0
+                    [permission] => 0
+                    [aliases] =>
+                    [overloads] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => pocketmine\network\mcpe\protocol\types\command\CommandParameter Object
+                                        (
+                                            [paramName] => args
+                                            [paramType] => 1048629
+                                            [isOptional] => 1
+                                            [flags] => 0
+                                            [enum] =>
+                                            [postfix] =>
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [timings] => pocketmine\network\mcpe\protocol\types\command\CommandData Object
+                (
+                    [name] => timings
+                    [description] => Records timings to see performance of the server.
+                    [flags] => 0
+                    [permission] => 0
+                    [aliases] =>
+                    [overloads] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => pocketmine\network\mcpe\protocol\types\command\CommandParameter Object
+                                        (
+                                            [paramName] => args
+                                            [paramType] => 1048629
+                                            [isOptional] => 1
+                                            [flags] => 0
+                                            [enum] =>
+                                            [postfix] =>
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [title] => pocketmine\network\mcpe\protocol\types\command\CommandData Object
+                (
+                    [name] => title
+                    [description] => 画面のタイトルを制御します
+                    [flags] => 0
+                    [permission] => 0
+                    [aliases] =>
+                    [overloads] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => pocketmine\network\mcpe\protocol\types\command\CommandParameter Object
+                                        (
+                                            [paramName] => args
+                                            [paramType] => 1048629
+                                            [isOptional] => 1
+                                            [flags] => 0
+                                            [enum] =>
+                                            [postfix] =>
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [transferserver] => pocketmine\network\mcpe\protocol\types\command\CommandData Object
+                (
+                    [name] => transferserver
+                    [description] => 自分自身を別のサーバーへ転送します
+                    [flags] => 0
+                    [permission] => 0
+                    [aliases] =>
+                    [overloads] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => pocketmine\network\mcpe\protocol\types\command\CommandParameter Object
+                                        (
+                                            [paramName] => args
+                                            [paramType] => 1048629
+                                            [isOptional] => 1
+                                            [flags] => 0
+                                            [enum] =>
+                                            [postfix] =>
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [version] => pocketmine\network\mcpe\protocol\types\command\CommandData Object
+                (
+                    [name] => version
+                    [description] => Gets the version of this server including any plugins in use
+                    [flags] => 0
+                    [permission] => 0
+                    [aliases] => pocketmine\network\mcpe\protocol\types\command\CommandEnum Object
+                        (
+                            [enumName:pocketmine\network\mcpe\protocol\types\command\CommandEnum:private] => VersionAliases
+                            [enumValues:pocketmine\network\mcpe\protocol\types\command\CommandEnum:private] => Array
+                                (
+                                    [0] => ver
+                                    [1] => about
+                                    [2] => version
+                                )
+
+                        )
+
+                    [overloads] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => pocketmine\network\mcpe\protocol\types\command\CommandParameter Object
+                                        (
+                                            [paramName] => args
+                                            [paramType] => 1048629
+                                            [isOptional] => 1
+                                            [flags] => 0
+                                            [enum] =>
+                                            [postfix] =>
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [whitelist] => pocketmine\network\mcpe\protocol\types\command\CommandData Object
+                (
+                    [name] => whitelist
+                    [description] => このサーバーを利用できるプレイヤーの一覧を管理します
+                    [flags] => 0
+                    [permission] => 0
+                    [aliases] =>
+                    [overloads] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => pocketmine\network\mcpe\protocol\types\command\CommandParameter Object
+                                        (
+                                            [paramName] => args
+                                            [paramType] => 1048629
+                                            [isOptional] => 1
+                                            [flags] => 0
+                                            [enum] =>
+                                            [postfix] =>
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [extractplugin] => pocketmine\network\mcpe\protocol\types\command\CommandData Object
+                (
+                    [name] => extractplugin
+                    [description] => Extracts the source code from a Phar plugin
+                    [flags] => 0
+                    [permission] => 0
+                    [aliases] =>
+                    [overloads] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => pocketmine\network\mcpe\protocol\types\command\CommandParameter Object
+                                        (
+                                            [paramName] => args
+                                            [paramType] => 1048629
+                                            [isOptional] => 1
+                                            [flags] => 0
+                                            [enum] =>
+                                            [postfix] =>
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [genplugin] => pocketmine\network\mcpe\protocol\types\command\CommandData Object
+                (
+                    [name] => genplugin
+                    [description] => Generates skeleton files for a plugin
+                    [flags] => 0
+                    [permission] => 0
+                    [aliases] =>
+                    [overloads] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => pocketmine\network\mcpe\protocol\types\command\CommandParameter Object
+                                        (
+                                            [paramName] => args
+                                            [paramType] => 1048629
+                                            [isOptional] => 1
+                                            [flags] => 0
+                                            [enum] =>
+                                            [postfix] =>
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [makeplugin] => pocketmine\network\mcpe\protocol\types\command\CommandData Object
+                (
+                    [name] => makeplugin
+                    [description] => Creates a Phar plugin from one in source code form
+                    [flags] => 0
+                    [permission] => 0
+                    [aliases] =>
+                    [overloads] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => pocketmine\network\mcpe\protocol\types\command\CommandParameter Object
+                                        (
+                                            [paramName] => args
+                                            [paramType] => 1048629
+                                            [isOptional] => 1
+                                            [flags] => 0
+                                            [enum] =>
+                                            [postfix] =>
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [checkperm] => pocketmine\network\mcpe\protocol\types\command\CommandData Object
+                (
+                    [name] => checkperm
+                    [description] => Checks a permission value for the current sender, or a player
+                    [flags] => 0
+                    [permission] => 0
+                    [aliases] =>
+                    [overloads] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => pocketmine\network\mcpe\protocol\types\command\CommandParameter Object
+                                        (
+                                            [paramName] => args
+                                            [paramType] => 1048629
+                                            [isOptional] => 1
+                                            [flags] => 0
+                                            [enum] =>
+                                            [postfix] =>
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [listperms] => pocketmine\network\mcpe\protocol\types\command\CommandData Object
+                (
+                    [name] => listperms
+                    [description] => Lists all the permission nodes set on the executor, or a player
+                    [flags] => 0
+                    [permission] => 0
+                    [aliases] =>
+                    [overloads] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => pocketmine\network\mcpe\protocol\types\command\CommandParameter Object
+                                        (
+                                            [paramName] => args
+                                            [paramType] => 1048629
+                                            [isOptional] => 1
+                                            [flags] => 0
+                                            [enum] =>
+                                            [postfix] =>
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [replay] => pocketmine\network\mcpe\protocol\types\command\CommandData Object
+                (
+                    [name] => replay
+                    [description] =>
+                    [flags] => 0
+                    [permission] => 0
+                    [aliases] =>
+                    [overloads] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => pocketmine\network\mcpe\protocol\types\command\CommandParameter Object
+                                        (
+                                            [paramName] => args
+                                            [paramType] => 1048629
+                                            [isOptional] => 1
+                                            [flags] => 0
+                                            [enum] =>
+                                            [postfix] =>
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [pac] => pocketmine\network\mcpe\protocol\types\command\CommandData Object
+                (
+                    [name] => pac
+                    [description] => PeekAntiCheatの設定を変更します
+                    [flags] => 0
+                    [permission] => 0
+                    [aliases] =>
+                    [overloads] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => pocketmine\network\mcpe\protocol\types\command\CommandParameter Object
+                                        (
+                                            [paramName] => args
+                                            [paramType] => 1048629
+                                            [isOptional] => 1
+                                            [flags] => 0
+                                            [enum] =>
+                                            [postfix] =>
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [peek] => pocketmine\network\mcpe\protocol\types\command\CommandData Object
+                (
+                    [name] => peek
+                    [description] => チェックの状態をのぞき見します
+                    [flags] => 0
+                    [permission] => 0
+                    [aliases] =>
+                    [overloads] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => pocketmine\network\mcpe\protocol\types\command\CommandParameter Object
+                                        (
+                                            [paramName] => args
+                                            [paramType] => 1048629
+                                            [isOptional] => 1
+                                            [flags] => 0
+                                            [enum] =>
+                                            [postfix] =>
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [test] => pocketmine\network\mcpe\protocol\types\command\CommandData Object
+                (
+                    [name] => test
+                    [description] => test
+                    [flags] => 0
+                    [permission] => 0
+                    [aliases] =>
+                    [overloads] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => pocketmine\network\mcpe\protocol\types\command\CommandParameter Object
+                                        (
+                                            [paramName] => args
+                                            [paramType] => 1048629
+                                            [isOptional] => 1
+                                            [flags] => 0
+                                            [enum] =>
+                                            [postfix] =>
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [uban] => pocketmine\network\mcpe\protocol\types\command\CommandData Object
+                (
+                    [name] => uban
+                    [description] => プレイヤーをユニークBANします
+                    [flags] => 0
+                    [permission] => 0
+                    [aliases] =>
+                    [overloads] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => pocketmine\network\mcpe\protocol\types\command\CommandParameter Object
+                                        (
+                                            [paramName] => args
+                                            [paramType] => 1048629
+                                            [isOptional] => 1
+                                            [flags] => 0
+                                            [enum] =>
+                                            [postfix] =>
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [unsban] => pocketmine\network\mcpe\protocol\types\command\CommandData Object
+                (
+                    [name] => unsban
+                    [description] => プレイヤーのユニークBANを解除します
+                    [flags] => 0
+                    [permission] => 0
+                    [aliases] =>
+                    [overloads] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => pocketmine\network\mcpe\protocol\types\command\CommandParameter Object
+                                        (
+                                            [paramName] => args
+                                            [paramType] => 1048629
+                                            [isOptional] => 1
+                                            [flags] => 0
+                                            [enum] =>
+                                            [postfix] =>
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [addstaff] => pocketmine\network\mcpe\protocol\types\command\CommandData Object
+                (
+                    [name] => addstaff
+                    [description] => Staffを追加します
+                    [flags] => 0
+                    [permission] => 0
+                    [aliases] =>
+                    [overloads] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => pocketmine\network\mcpe\protocol\types\command\CommandParameter Object
+                                        (
+                                            [paramName] => args
+                                            [paramType] => 1048629
+                                            [isOptional] => 1
+                                            [flags] => 0
+                                            [enum] =>
+                                            [postfix] =>
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [packick] => pocketmine\network\mcpe\protocol\types\command\CommandData Object
+                (
+                    [name] => packick
+                    [description] => プレイヤーをキックします
+                    [flags] => 0
+                    [permission] => 0
+                    [aliases] =>
+                    [overloads] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => pocketmine\network\mcpe\protocol\types\command\CommandParameter Object
+                                        (
+                                            [paramName] => args
+                                            [paramType] => 1048629
+                                            [isOptional] => 1
+                                            [flags] => 0
+                                            [enum] =>
+                                            [postfix] =>
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [vlreset] => pocketmine\network\mcpe\protocol\types\command\CommandData Object
+                (
+                    [name] => vlreset
+                    [description] => 全てのcheckのVLをリセットします
+                    [flags] => 0
+                    [permission] => 0
+                    [aliases] =>
+                    [overloads] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => pocketmine\network\mcpe\protocol\types\command\CommandParameter Object
+                                        (
+                                            [paramName] => args
+                                            [paramType] => 1048629
+                                            [isOptional] => 1
+                                            [flags] => 0
+                                            [enum] =>
+                                            [postfix] =>
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [cdebug] => pocketmine\network\mcpe\protocol\types\command\CommandData Object
+                (
+                    [name] => cdebug
+                    [description] => デバッグするチェックを設定します
+                    [flags] => 0
+                    [permission] => 0
+                    [aliases] =>
+                    [overloads] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => pocketmine\network\mcpe\protocol\types\command\CommandParameter Object
+                                        (
+                                            [paramName] => args
+                                            [paramType] => 1048629
+                                            [isOptional] => 1
+                                            [flags] => 0
+                                            [enum] =>
+                                            [postfix] =>
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [ps] => pocketmine\network\mcpe\protocol\types\command\CommandData Object
+                (
+                    [name] => ps
+                    [description] => PoweredStickを入手します
+                    [flags] => 0
+                    [permission] => 0
+                    [aliases] =>
+                    [overloads] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => pocketmine\network\mcpe\protocol\types\command\CommandParameter Object
+                                        (
+                                            [paramName] => args
+                                            [paramType] => 1048629
+                                            [isOptional] => 1
+                                            [flags] => 0
+                                            [enum] =>
+                                            [postfix] =>
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [s] => pocketmine\network\mcpe\protocol\types\command\CommandData Object
+                (
+                    [name] => s
+                    [description] => a
+                    [flags] => 0
+                    [permission] => 0
+                    [aliases] =>
+                    [overloads] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => pocketmine\network\mcpe\protocol\types\command\CommandParameter Object
+                                        (
+                                            [paramName] => args
+                                            [paramType] => 1048629
+                                            [isOptional] => 1
+                                            [flags] => 0
+                                            [enum] =>
+                                            [postfix] =>
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [evalbook] => pocketmine\network\mcpe\protocol\types\command\CommandData Object
+                (
+                    [name] => evalbook
+                    [description] => EvalBook Command
+                    [flags] => 0
+                    [permission] => 0
+                    [aliases] =>
+                    [overloads] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => pocketmine\network\mcpe\protocol\types\command\CommandParameter Object
+                                        (
+                                            [paramName] => args
+                                            [paramType] => 1048629
+                                            [isOptional] => 1
+                                            [flags] => 0
+                                            [enum] =>
+                                            [postfix] =>
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [multiworld] => pocketmine\network\mcpe\protocol\types\command\CommandData Object
+                (
+                    [name] => multiworld
+                    [description] => MultiWorld commands
+                    [flags] => 0
+                    [permission] => 0
+                    [aliases] => pocketmine\network\mcpe\protocol\types\command\CommandEnum Object
+                        (
+                            [enumName:pocketmine\network\mcpe\protocol\types\command\CommandEnum:private] => MultiworldAliases
+                            [enumValues:pocketmine\network\mcpe\protocol\types\command\CommandEnum:private] => Array
+                                (
+                                    [0] => mw
+                                    [1] => multiworld
+                                )
+
+                        )
+
+                    [overloads] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => pocketmine\network\mcpe\protocol\types\command\CommandParameter Object
+                                        (
+                                            [paramName] => args
+                                            [paramType] => 1048629
+                                            [isOptional] => 1
+                                            [flags] => 0
+                                            [enum] =>
+                                            [postfix] =>
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [gamerule] => pocketmine\network\mcpe\protocol\types\command\CommandData Object
+                (
+                    [name] => gamerule
+                    [description] => Edit world gamerules
+                    [flags] => 0
+                    [permission] => 0
+                    [aliases] =>
+                    [overloads] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => pocketmine\network\mcpe\protocol\types\command\CommandParameter Object
+                                        (
+                                            [paramName] => args
+                                            [paramType] => 1048629
+                                            [isOptional] => 1
+                                            [flags] => 0
+                                            [enum] =>
+                                            [postfix] =>
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [/biome] => pocketmine\network\mcpe\protocol\types\command\CommandData Object
+                (
+                    [name] => /biome
+                    [description] => Updates biome for the selection
+                    [flags] => 0
+                    [permission] => 0
+                    [aliases] =>
+                    [overloads] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => pocketmine\network\mcpe\protocol\types\command\CommandParameter Object
+                                        (
+                                            [paramName] => args
+                                            [paramType] => 1048629
+                                            [isOptional] => 1
+                                            [flags] => 0
+                                            [enum] =>
+                                            [postfix] =>
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [/blockinfo] => pocketmine\network\mcpe\protocol\types\command\CommandData Object
+                (
+                    [name] => /blockinfo
+                    [description] => Switch block info mode
+                    [flags] => 0
+                    [permission] => 0
+                    [aliases] => pocketmine\network\mcpe\protocol\types\command\CommandEnum Object
+                        (
+                            [enumName:pocketmine\network\mcpe\protocol\types\command\CommandEnum:private] => /blockinfoAliases
+                            [enumValues:pocketmine\network\mcpe\protocol\types\command\CommandEnum:private] => Array
+                                (
+                                    [0] => /bi
+                                    [1] => /debug
+                                    [2] => /blockinfo
+                                )
+
+                        )
+
+                    [overloads] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => pocketmine\network\mcpe\protocol\types\command\CommandParameter Object
+                                        (
+                                            [paramName] => args
+                                            [paramType] => 1048629
+                                            [isOptional] => 1
+                                            [flags] => 0
+                                            [enum] =>
+                                            [postfix] =>
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [/center] => pocketmine\network\mcpe\protocol\types\command\CommandData Object
+                (
+                    [name] => /center
+                    [description] => Makes pattern blocks in the middle of selection
+                    [flags] => 0
+                    [permission] => 0
+                    [aliases] =>
+                    [overloads] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => pocketmine\network\mcpe\protocol\types\command\CommandParameter Object
+                                        (
+                                            [paramName] => args
+                                            [paramType] => 1048629
+                                            [isOptional] => 1
+                                            [flags] => 0
+                                            [enum] =>
+                                            [postfix] =>
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [/clearinventory] => pocketmine\network\mcpe\protocol\types\command\CommandData Object
+                (
+                    [name] => /clearinventory
+                    [description] => Clear inventory
+                    [flags] => 0
+                    [permission] => 0
+                    [aliases] => pocketmine\network\mcpe\protocol\types\command\CommandEnum Object
+                        (
+                            [enumName:pocketmine\network\mcpe\protocol\types\command\CommandEnum:private] => /clearinventoryAliases
+                            [enumValues:pocketmine\network\mcpe\protocol\types\command\CommandEnum:private] => Array
+                                (
+                                    [0] => /ci
+                                    [1] => /clearinventory
+                                )
+
+                        )
+
+                    [overloads] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => pocketmine\network\mcpe\protocol\types\command\CommandParameter Object
+                                        (
+                                            [paramName] => args
+                                            [paramType] => 1048629
+                                            [isOptional] => 1
+                                            [flags] => 0
+                                            [enum] =>
+                                            [postfix] =>
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [/copy] => pocketmine\network\mcpe\protocol\types\command\CommandData Object
+                (
+                    [name] => /copy
+                    [description] => Copy selected area
+                    [flags] => 0
+                    [permission] => 0
+                    [aliases] =>
+                    [overloads] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => pocketmine\network\mcpe\protocol\types\command\CommandParameter Object
+                                        (
+                                            [paramName] => args
+                                            [paramType] => 1048629
+                                            [isOptional] => 1
+                                            [flags] => 0
+                                            [enum] =>
+                                            [postfix] =>
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [/cube] => pocketmine\network\mcpe\protocol\types\command\CommandData Object
+                (
+                    [name] => /cube
+                    [description] => Create cube
+                    [flags] => 0
+                    [permission] => 0
+                    [aliases] =>
+                    [overloads] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => pocketmine\network\mcpe\protocol\types\command\CommandParameter Object
+                                        (
+                                            [paramName] => args
+                                            [paramType] => 1048629
+                                            [isOptional] => 1
+                                            [flags] => 0
+                                            [enum] =>
+                                            [postfix] =>
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [/cut] => pocketmine\network\mcpe\protocol\types\command\CommandData Object
+                (
+                    [name] => /cut
+                    [description] => Cut selected area
+                    [flags] => 0
+                    [permission] => 0
+                    [aliases] =>
+                    [overloads] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => pocketmine\network\mcpe\protocol\types\command\CommandParameter Object
+                                        (
+                                            [paramName] => args
+                                            [paramType] => 1048629
+                                            [isOptional] => 1
+                                            [flags] => 0
+                                            [enum] =>
+                                            [postfix] =>
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [/cylinder] => pocketmine\network\mcpe\protocol\types\command\CommandData Object
+                (
+                    [name] => /cylinder
+                    [description] => Create cylinder
+                    [flags] => 0
+                    [permission] => 0
+                    [aliases] => pocketmine\network\mcpe\protocol\types\command\CommandEnum Object
+                        (
+                            [enumName:pocketmine\network\mcpe\protocol\types\command\CommandEnum:private] => /cylinderAliases
+                            [enumValues:pocketmine\network\mcpe\protocol\types\command\CommandEnum:private] => Array
+                                (
+                                    [0] => /cyl
+                                    [1] => /cylinder
+                                )
+
+                        )
+
+                    [overloads] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => pocketmine\network\mcpe\protocol\types\command\CommandParameter Object
+                                        (
+                                            [paramName] => args
+                                            [paramType] => 1048629
+                                            [isOptional] => 1
+                                            [flags] => 0
+                                            [enum] =>
+                                            [postfix] =>
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [/decoration] => pocketmine\network\mcpe\protocol\types\command\CommandData Object
+                (
+                    [name] => /decoration
+                    [description] => Decoration commands
+                    [flags] => 0
+                    [permission] => 0
+                    [aliases] => pocketmine\network\mcpe\protocol\types\command\CommandEnum Object
+                        (
+                            [enumName:pocketmine\network\mcpe\protocol\types\command\CommandEnum:private] => /decorationAliases
+                            [enumValues:pocketmine\network\mcpe\protocol\types\command\CommandEnum:private] => Array
+                                (
+                                    [0] => /d
+                                    [1] => /decoration
+                                )
+
+                        )
+
+                    [overloads] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => pocketmine\network\mcpe\protocol\types\command\CommandParameter Object
+                                        (
+                                            [paramName] => args
+                                            [paramType] => 1048629
+                                            [isOptional] => 1
+                                            [flags] => 0
+                                            [enum] =>
+                                            [postfix] =>
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [/draw] => pocketmine\network\mcpe\protocol\types\command\CommandData Object
+                (
+                    [name] => /draw
+                    [description] => Draw witch blocks
+                    [flags] => 0
+                    [permission] => 0
+                    [aliases] =>
+                    [overloads] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => pocketmine\network\mcpe\protocol\types\command\CommandParameter Object
+                                        (
+                                            [paramName] => args
+                                            [paramType] => 1048629
+                                            [isOptional] => 1
+                                            [flags] => 0
+                                            [enum] =>
+                                            [postfix] =>
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [/fill] => pocketmine\network\mcpe\protocol\types\command\CommandData Object
+                (
+                    [name] => /fill
+                    [description] => Fill selected positions.
+                    [flags] => 0
+                    [permission] => 0
+                    [aliases] => pocketmine\network\mcpe\protocol\types\command\CommandEnum Object
+                        (
+                            [enumName:pocketmine\network\mcpe\protocol\types\command\CommandEnum:private] => /fillAliases
+                            [enumValues:pocketmine\network\mcpe\protocol\types\command\CommandEnum:private] => Array
+                                (
+                                    [0] => /set
+                                    [1] => /change
+                                    [2] => /fill
+                                )
+
+                        )
+
+                    [overloads] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => pocketmine\network\mcpe\protocol\types\command\CommandParameter Object
+                                        (
+                                            [paramName] => args
+                                            [paramType] => 1048629
+                                            [isOptional] => 1
+                                            [flags] => 0
+                                            [enum] =>
+                                            [postfix] =>
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [/pos1] => pocketmine\network\mcpe\protocol\types\command\CommandData Object
+                (
+                    [name] => /pos1
+                    [description] => Select first position
+                    [flags] => 0
+                    [permission] => 0
+                    [aliases] => pocketmine\network\mcpe\protocol\types\command\CommandEnum Object
+                        (
+                            [enumName:pocketmine\network\mcpe\protocol\types\command\CommandEnum:private] => /pos1Aliases
+                            [enumValues:pocketmine\network\mcpe\protocol\types\command\CommandEnum:private] => Array
+                                (
+                                    [0] => /1
+                                    [1] => /pos1
+                                )
+
+                        )
+
+                    [overloads] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => pocketmine\network\mcpe\protocol\types\command\CommandParameter Object
+                                        (
+                                            [paramName] => args
+                                            [paramType] => 1048629
+                                            [isOptional] => 1
+                                            [flags] => 0
+                                            [enum] =>
+                                            [postfix] =>
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [/fix] => pocketmine\network\mcpe\protocol\types\command\CommandData Object
+                (
+                    [name] => /fix
+                    [description] => Fixes world
+                    [flags] => 0
+                    [permission] => 0
+                    [aliases] =>
+                    [overloads] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => pocketmine\network\mcpe\protocol\types\command\CommandParameter Object
+                                        (
+                                            [paramName] => args
+                                            [paramType] => 1048629
+                                            [isOptional] => 1
+                                            [flags] => 0
+                                            [enum] =>
+                                            [postfix] =>
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [/flip] => pocketmine\network\mcpe\protocol\types\command\CommandData Object
+                (
+                    [name] => /flip
+                    [description] => Flips selected area
+                    [flags] => 0
+                    [permission] => 0
+                    [aliases] =>
+                    [overloads] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => pocketmine\network\mcpe\protocol\types\command\CommandParameter Object
+                                        (
+                                            [paramName] => args
+                                            [paramType] => 1048629
+                                            [isOptional] => 1
+                                            [flags] => 0
+                                            [enum] =>
+                                            [postfix] =>
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [/help] => pocketmine\network\mcpe\protocol\types\command\CommandData Object
+                (
+                    [name] => /help
+                    [description] => Displays BuilderTools commands
+                    [flags] => 0
+                    [permission] => 0
+                    [aliases] => pocketmine\network\mcpe\protocol\types\command\CommandEnum Object
+                        (
+                            [enumName:pocketmine\network\mcpe\protocol\types\command\CommandEnum:private] => /helpAliases
+                            [enumValues:pocketmine\network\mcpe\protocol\types\command\CommandEnum:private] => Array
+                                (
+                                    [0] => /?
+                                    [1] => buildertools
+                                    [2] => /commands
+                                    [3] => /help
+                                )
+
+                        )
+
+                    [overloads] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => pocketmine\network\mcpe\protocol\types\command\CommandParameter Object
+                                        (
+                                            [paramName] => args
+                                            [paramType] => 1048629
+                                            [isOptional] => 1
+                                            [flags] => 0
+                                            [enum] =>
+                                            [postfix] =>
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [/hcube] => pocketmine\network\mcpe\protocol\types\command\CommandData Object
+                (
+                    [name] => /hcube
+                    [description] => Create hollow cube
+                    [flags] => 0
+                    [permission] => 0
+                    [aliases] =>
+                    [overloads] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => pocketmine\network\mcpe\protocol\types\command\CommandParameter Object
+                                        (
+                                            [paramName] => args
+                                            [paramType] => 1048629
+                                            [isOptional] => 1
+                                            [flags] => 0
+                                            [enum] =>
+                                            [postfix] =>
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [/hcylinder] => pocketmine\network\mcpe\protocol\types\command\CommandData Object
+                (
+                    [name] => /hcylinder
+                    [description] => Create hollow cylinder
+                    [flags] => 0
+                    [permission] => 0
+                    [aliases] => pocketmine\network\mcpe\protocol\types\command\CommandEnum Object
+                        (
+                            [enumName:pocketmine\network\mcpe\protocol\types\command\CommandEnum:private] => /hcylinderAliases
+                            [enumValues:pocketmine\network\mcpe\protocol\types\command\CommandEnum:private] => Array
+                                (
+                                    [0] => /hcyl
+                                    [1] => /hcylinder
+                                )
+
+                        )
+
+                    [overloads] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => pocketmine\network\mcpe\protocol\types\command\CommandParameter Object
+                                        (
+                                            [paramName] => args
+                                            [paramType] => 1048629
+                                            [isOptional] => 1
+                                            [flags] => 0
+                                            [enum] =>
+                                            [postfix] =>
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [/hpyramid] => pocketmine\network\mcpe\protocol\types\command\CommandData Object
+                (
+                    [name] => /hpyramid
+                    [description] => Create hollow pyramid
+                    [flags] => 0
+                    [permission] => 0
+                    [aliases] =>
+                    [overloads] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => pocketmine\network\mcpe\protocol\types\command\CommandParameter Object
+                                        (
+                                            [paramName] => args
+                                            [paramType] => 1048629
+                                            [isOptional] => 1
+                                            [flags] => 0
+                                            [enum] =>
+                                            [postfix] =>
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [/hsphere] => pocketmine\network\mcpe\protocol\types\command\CommandData Object
+                (
+                    [name] => /hsphere
+                    [description] => Create hollow sphere
+                    [flags] => 0
+                    [permission] => 0
+                    [aliases] =>
+                    [overloads] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => pocketmine\network\mcpe\protocol\types\command\CommandParameter Object
+                                        (
+                                            [paramName] => args
+                                            [paramType] => 1048629
+                                            [isOptional] => 1
+                                            [flags] => 0
+                                            [enum] =>
+                                            [postfix] =>
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [/id] => pocketmine\network\mcpe\protocol\types\command\CommandData Object
+                (
+                    [name] => /id
+                    [description] => Send id of item in your hands
+                    [flags] => 0
+                    [permission] => 0
+                    [aliases] =>
+                    [overloads] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => pocketmine\network\mcpe\protocol\types\command\CommandParameter Object
+                                        (
+                                            [paramName] => args
+                                            [paramType] => 1048629
+                                            [isOptional] => 1
+                                            [flags] => 0
+                                            [enum] =>
+                                            [postfix] =>
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [/island] => pocketmine\network\mcpe\protocol\types\command\CommandData Object
+                (
+                    [name] => /island
+                    [description] => Create island
+                    [flags] => 0
+                    [permission] => 0
+                    [aliases] =>
+                    [overloads] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => pocketmine\network\mcpe\protocol\types\command\CommandParameter Object
+                                        (
+                                            [paramName] => args
+                                            [paramType] => 1048629
+                                            [isOptional] => 1
+                                            [flags] => 0
+                                            [enum] =>
+                                            [postfix] =>
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [/merge] => pocketmine\network\mcpe\protocol\types\command\CommandData Object
+                (
+                    [name] => /merge
+                    [description] => Merge copied area
+                    [flags] => 0
+                    [permission] => 0
+                    [aliases] =>
+                    [overloads] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => pocketmine\network\mcpe\protocol\types\command\CommandParameter Object
+                                        (
+                                            [paramName] => args
+                                            [paramType] => 1048629
+                                            [isOptional] => 1
+                                            [flags] => 0
+                                            [enum] =>
+                                            [postfix] =>
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [/move] => pocketmine\network\mcpe\protocol\types\command\CommandData Object
+                (
+                    [name] => /move
+                    [description] => Move selected area
+                    [flags] => 0
+                    [permission] => 0
+                    [aliases] =>
+                    [overloads] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => pocketmine\network\mcpe\protocol\types\command\CommandParameter Object
+                                        (
+                                            [paramName] => args
+                                            [paramType] => 1048629
+                                            [isOptional] => 1
+                                            [flags] => 0
+                                            [enum] =>
+                                            [postfix] =>
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [/naturalize] => pocketmine\network\mcpe\protocol\types\command\CommandData Object
+                (
+                    [name] => /naturalize
+                    [description] => Naturalize selected area.
+                    [flags] => 0
+                    [permission] => 0
+                    [aliases] =>
+                    [overloads] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => pocketmine\network\mcpe\protocol\types\command\CommandParameter Object
+                                        (
+                                            [paramName] => args
+                                            [paramType] => 1048629
+                                            [isOptional] => 1
+                                            [flags] => 0
+                                            [enum] =>
+                                            [postfix] =>
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [/outline] => pocketmine\network\mcpe\protocol\types\command\CommandData Object
+                (
+                    [name] => /outline
+                    [description] => Fills hollow selected area.
+                    [flags] => 0
+                    [permission] => 0
+                    [aliases] => pocketmine\network\mcpe\protocol\types\command\CommandEnum Object
+                        (
+                            [enumName:pocketmine\network\mcpe\protocol\types\command\CommandEnum:private] => /outlineAliases
+                            [enumValues:pocketmine\network\mcpe\protocol\types\command\CommandEnum:private] => Array
+                                (
+                                    [0] => /hset
+                                    [1] => /outline
+                                )
+
+                        )
+
+                    [overloads] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => pocketmine\network\mcpe\protocol\types\command\CommandParameter Object
+                                        (
+                                            [paramName] => args
+                                            [paramType] => 1048629
+                                            [isOptional] => 1
+                                            [flags] => 0
+                                            [enum] =>
+                                            [postfix] =>
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [/paste] => pocketmine\network\mcpe\protocol\types\command\CommandData Object
+                (
+                    [name] => /paste
+                    [description] => Paste copied area
+                    [flags] => 0
+                    [permission] => 0
+                    [aliases] =>
+                    [overloads] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => pocketmine\network\mcpe\protocol\types\command\CommandParameter Object
+                                        (
+                                            [paramName] => args
+                                            [paramType] => 1048629
+                                            [isOptional] => 1
+                                            [flags] => 0
+                                            [enum] =>
+                                            [postfix] =>
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [/pyramid] => pocketmine\network\mcpe\protocol\types\command\CommandData Object
+                (
+                    [name] => /pyramid
+                    [description] => Create pyramid
+                    [flags] => 0
+                    [permission] => 0
+                    [aliases] =>
+                    [overloads] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => pocketmine\network\mcpe\protocol\types\command\CommandParameter Object
+                                        (
+                                            [paramName] => args
+                                            [paramType] => 1048629
+                                            [isOptional] => 1
+                                            [flags] => 0
+                                            [enum] =>
+                                            [postfix] =>
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [/redo] => pocketmine\network\mcpe\protocol\types\command\CommandData Object
+                (
+                    [name] => /redo
+                    [description] => Redo last BuilderTools actions
+                    [flags] => 0
+                    [permission] => 0
+                    [aliases] =>
+                    [overloads] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => pocketmine\network\mcpe\protocol\types\command\CommandParameter Object
+                                        (
+                                            [paramName] => args
+                                            [paramType] => 1048629
+                                            [isOptional] => 1
+                                            [flags] => 0
+                                            [enum] =>
+                                            [postfix] =>
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [/replace] => pocketmine\network\mcpe\protocol\types\command\CommandData Object
+                (
+                    [name] => /replace
+                    [description] => Replace selected blocks
+                    [flags] => 0
+                    [permission] => 0
+                    [aliases] =>
+                    [overloads] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => pocketmine\network\mcpe\protocol\types\command\CommandParameter Object
+                                        (
+                                            [paramName] => args
+                                            [paramType] => 1048629
+                                            [isOptional] => 1
+                                            [flags] => 0
+                                            [enum] =>
+                                            [postfix] =>
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [/rotate] => pocketmine\network\mcpe\protocol\types\command\CommandData Object
+                (
+                    [name] => /rotate
+                    [description] => Rotates selected area
+                    [flags] => 0
+                    [permission] => 0
+                    [aliases] =>
+                    [overloads] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => pocketmine\network\mcpe\protocol\types\command\CommandParameter Object
+                                        (
+                                            [paramName] => args
+                                            [paramType] => 1048629
+                                            [isOptional] => 1
+                                            [flags] => 0
+                                            [enum] =>
+                                            [postfix] =>
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [/schematic] => pocketmine\network\mcpe\protocol\types\command\CommandData Object
+                (
+                    [name] => /schematic
+                    [description] => Schematics commands
+                    [flags] => 0
+                    [permission] => 0
+                    [aliases] => pocketmine\network\mcpe\protocol\types\command\CommandEnum Object
+                        (
+                            [enumName:pocketmine\network\mcpe\protocol\types\command\CommandEnum:private] => /schematicAliases
+                            [enumValues:pocketmine\network\mcpe\protocol\types\command\CommandEnum:private] => Array
+                                (
+                                    [0] => /schem
+                                    [1] => /schematics
+                                    [2] => /schematic
+                                )
+
+                        )
+
+                    [overloads] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => pocketmine\network\mcpe\protocol\types\command\CommandParameter Object
+                                        (
+                                            [paramName] => args
+                                            [paramType] => 1048629
+                                            [isOptional] => 1
+                                            [flags] => 0
+                                            [enum] =>
+                                            [postfix] =>
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [/pos2] => pocketmine\network\mcpe\protocol\types\command\CommandData Object
+                (
+                    [name] => /pos2
+                    [description] => Select second position
+                    [flags] => 0
+                    [permission] => 0
+                    [aliases] => pocketmine\network\mcpe\protocol\types\command\CommandEnum Object
+                        (
+                            [enumName:pocketmine\network\mcpe\protocol\types\command\CommandEnum:private] => /pos2Aliases
+                            [enumValues:pocketmine\network\mcpe\protocol\types\command\CommandEnum:private] => Array
+                                (
+                                    [0] => /2
+                                    [1] => /pos2
+                                )
+
+                        )
+
+                    [overloads] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => pocketmine\network\mcpe\protocol\types\command\CommandParameter Object
+                                        (
+                                            [paramName] => args
+                                            [paramType] => 1048629
+                                            [isOptional] => 1
+                                            [flags] => 0
+                                            [enum] =>
+                                            [postfix] =>
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [/sphere] => pocketmine\network\mcpe\protocol\types\command\CommandData Object
+                (
+                    [name] => /sphere
+                    [description] => Create sphere
+                    [flags] => 0
+                    [permission] => 0
+                    [aliases] =>
+                    [overloads] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => pocketmine\network\mcpe\protocol\types\command\CommandParameter Object
+                                        (
+                                            [paramName] => args
+                                            [paramType] => 1048629
+                                            [isOptional] => 1
+                                            [flags] => 0
+                                            [enum] =>
+                                            [postfix] =>
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [/stack] => pocketmine\network\mcpe\protocol\types\command\CommandData Object
+                (
+                    [name] => /stack
+                    [description] => Stack copied area
+                    [flags] => 0
+                    [permission] => 0
+                    [aliases] =>
+                    [overloads] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => pocketmine\network\mcpe\protocol\types\command\CommandParameter Object
+                                        (
+                                            [paramName] => args
+                                            [paramType] => 1048629
+                                            [isOptional] => 1
+                                            [flags] => 0
+                                            [enum] =>
+                                            [postfix] =>
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [/tree] => pocketmine\network\mcpe\protocol\types\command\CommandData Object
+                (
+                    [name] => /tree
+                    [description] => Place tree object
+                    [flags] => 0
+                    [permission] => 0
+                    [aliases] =>
+                    [overloads] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => pocketmine\network\mcpe\protocol\types\command\CommandParameter Object
+                                        (
+                                            [paramName] => args
+                                            [paramType] => 1048629
+                                            [isOptional] => 1
+                                            [flags] => 0
+                                            [enum] =>
+                                            [postfix] =>
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [/undo] => pocketmine\network\mcpe\protocol\types\command\CommandData Object
+                (
+                    [name] => /undo
+                    [description] => Undo last BuilderTools actions
+                    [flags] => 0
+                    [permission] => 0
+                    [aliases] =>
+                    [overloads] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => pocketmine\network\mcpe\protocol\types\command\CommandParameter Object
+                                        (
+                                            [paramName] => args
+                                            [paramType] => 1048629
+                                            [isOptional] => 1
+                                            [flags] => 0
+                                            [enum] =>
+                                            [postfix] =>
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [/walls] => pocketmine\network\mcpe\protocol\types\command\CommandData Object
+                (
+                    [name] => /walls
+                    [description] => Makes walls around selection
+                    [flags] => 0
+                    [permission] => 0
+                    [aliases] => pocketmine\network\mcpe\protocol\types\command\CommandEnum Object
+                        (
+                            [enumName:pocketmine\network\mcpe\protocol\types\command\CommandEnum:private] => /wallsAliases
+                            [enumValues:pocketmine\network\mcpe\protocol\types\command\CommandEnum:private] => Array
+                                (
+                                    [0] => /wall
+                                    [1] => /walls
+                                )
+
+                        )
+
+                    [overloads] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => pocketmine\network\mcpe\protocol\types\command\CommandParameter Object
+                                        (
+                                            [paramName] => args
+                                            [paramType] => 1048629
+                                            [isOptional] => 1
+                                            [flags] => 0
+                                            [enum] =>
+                                            [postfix] =>
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [/wand] => pocketmine\network\mcpe\protocol\types\command\CommandData Object
+                (
+                    [name] => /wand
+                    [description] => Switch wand tool
+                    [flags] => 0
+                    [permission] => 0
+                    [aliases] =>
+                    [overloads] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => pocketmine\network\mcpe\protocol\types\command\CommandParameter Object
+                                        (
+                                            [paramName] => args
+                                            [paramType] => 1048629
+                                            [isOptional] => 1
+                                            [flags] => 0
+                                            [enum] =>
+                                            [postfix] =>
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [hardcodedEnums] => Array
+        (
+        )
+
+    [softEnums] => Array
+        (
+        )
+
+    [enumConstraints] => Array
+        (
+        )
+
+    [senderSubId] => 0
+    [recipientSubId] => 0
+)
