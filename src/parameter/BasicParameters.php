@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace NeiroNetwork\VanillaCommands\parameter;
 
+use pocketmine\entity\effect\StringToEffectParser;
+use pocketmine\item\enchantment\StringToEnchantmentParser;
 use pocketmine\item\ItemFactory;
 use pocketmine\item\LegacyStringToItemParser;
 use pocketmine\network\mcpe\protocol\AvailableCommandsPacket;
@@ -19,12 +21,32 @@ class BasicParameters {
 	 */
 	protected static array $itemNames = [];
 
+	/**
+	 * @var string[]
+	 */
+	protected static array $enchantNames = [];
+
+	/**
+	 * @var string[]
+	 */
+	protected static array $effectNames = [];
+
 	public static function init(): void {
 		if (empty(self::$itemNames)) {
 			$map = LegacyStringToItemParser::getInstance()->getMappings();
 			self::$itemNames = array_filter(array_keys($map), function (string $item): bool {
 				return !is_numeric($item);
 			});
+		}
+
+		if (empty(self::$enchantNames)) {
+			$map = StringToEnchantmentParser::getInstance()->getKnownAliases();
+			self::$enchantNames = $map;
+		}
+
+		if (empty(self::$effectNames)) {
+			$map = StringToEffectParser::getInstance()->getKnownAliases();
+			self::$effectNames = $map;
 		}
 	}
 
@@ -49,12 +71,20 @@ class BasicParameters {
 		return CommandParameter::standard($paramName, AvailableCommandsPacket::ARG_TYPE_STRING, $flags, $optional);
 	}
 
-	public static function item(string $name, string $enumName, int $flags = 1, bool $optional = false): CommandParameter {
-		return self::enum($name, $enumName, self::$itemNames, $flags, $optional);
+	public static function item(string $name, int $flags = 1, bool $optional = false): CommandParameter {
+		return self::enum($name, "item", self::$itemNames, $flags, $optional);
 	}
 
 	public static function message(string $paramName, int $flags = 0, bool $optional = false): CommandParameter {
 		return CommandParameter::standard($paramName, AvailableCommandsPacket::ARG_TYPE_MESSAGE, $flags, $optional);
+	}
+
+	public static function enchantment(string $name, int $flags = 1, bool $optional = false): CommandParameter {
+		return self::enum($name, "enchantment", self::$enchantNames, $flags, $optional);
+	}
+
+	public static function effect(string $name, int $flags = 1, bool $optional = false): CommandParameter {
+		return self::enum($name, "effect", self::$effectNames, $flags, $optional);
 	}
 
 	public static function merge(CommandParameter $param, int $type): CommandParameter {

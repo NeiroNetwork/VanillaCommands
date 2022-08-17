@@ -35,7 +35,7 @@ class Parameter {
 
 		$this->add("clear", [
 			BasicParameters::targets("player", optional: true),
-			BasicParameters::item("itemName", "item", optional: true),
+			BasicParameters::item("itemName", optional: true),
 			BasicParameters::int("data", optional: true),
 			BasicParameters::int("maxCount", optional: true)
 		]);
@@ -74,13 +74,7 @@ class Parameter {
 
 		$this->add("enchant", [
 			BasicParameters::targets("player"),
-			BasicParameters::int("enchantmentId"),
-			BasicParameters::int("level", optional: true)
-		]);
-
-		$this->add("enchant", [
-			BasicParameters::targets("player"),
-			BasicParameters::string("enchantmentName"),
+			BasicParameters::enchantment("name"),
 			BasicParameters::int("level", optional: true)
 		]);
 
@@ -118,17 +112,28 @@ class Parameter {
 
 		$this->add("give", [
 			BasicParameters::targets("player"),
-			BasicParameters::item("item : data(optional)", "item"),
+			BasicParameters::item("item : data(optional)"),
 			BasicParameters::int("amount", optional: true),
 			BasicParameters::json("nbt", optional: true)
 		]);
 
 		$this->add("effect", [
 			BasicParameters::targets("player"),
-			BasicParameters::string("effectName"),
+			BasicParameters::effect("name"),
 			BasicParameters::float("duration", optional: true),
 			BasicParameters::int("amplifier", optional: true),
 			BasicParameters::string("showParticles", optional: true)
+		]);
+
+		$this->add("effect", [
+			BasicParameters::targets("player"),
+			BasicParameters::effect("name"),
+			BasicParameters::enum("0", "0")
+		]);
+
+		$this->add("effect", [
+			BasicParameters::targets("player"),
+			BasicParameters::enum("clear", "clear")
 		]);
 
 		$this->add("whitelist", [
