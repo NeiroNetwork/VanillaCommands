@@ -123,7 +123,7 @@ class Parameter {
 	/**
 	 * @param string $name
 	 * 
-	 * @return CommandParameter[]|null
+	 * @return CommandParameter[][]|null
 	 */
 	public function get(string $name): ?array {
 		return $this->list[$name] ?? null;
