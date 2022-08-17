@@ -17,4 +17,7 @@
 ### Time コマンド
 ![time](https://user-images.githubusercontent.com/70795425/184936399-9c381f8f-74da-4fcd-a26d-c235c7189935.png)
 
+### Give コマンド
+![give](https://user-images.githubusercontent.com/70795425/185127874-8358c8cc-9c61-4879-b3fb-4ff598c74553.png)
+
 etc..
