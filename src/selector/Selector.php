@@ -46,6 +46,8 @@ class Selector {
 		$this->register(self::TYPE_ALL, function (CommandSender $sender, string $section): array {
 			if ($sender instanceof Player) {
 				return $sender->getWorld()->getPlayers();
+			} else {
+				return $sender->getServer()->getOnlinePlayers();
 			}
 			return [];
 		});
