@@ -12,6 +12,8 @@ use pocketmine\utils\CloningRegistryTrait;
 class BasicParameters {
 	#use CloningRegistryTrait;
 
+
+
 	public static function targets(string $paramName, int $flags = 0, bool $optional = false): CommandParameter {
 		return CommandParameter::standard($paramName, AvailableCommandsPacket::ARG_TYPE_TARGET, $flags, $optional);
 	}
@@ -52,6 +54,8 @@ class BasicParameters {
 		}
 		return CommandParameter::enum($name, new CommandEnum($enumName, $enumValues), $flags, $optional);
 	}
+
+
 
 	public static function json(string $name, int $flags = 0, bool $optional = false): CommandParameter {
 		return CommandParameter::standard($name, AvailableCommandsPacket::ARG_TYPE_JSON, $flags, $optional);

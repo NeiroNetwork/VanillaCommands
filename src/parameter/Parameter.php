@@ -100,7 +100,12 @@ class Parameter {
 		]);
 
 		$this->add("gamemode", [
-			BasicParameters::string("gamemode"),
+			BasicParameters::string("gamemodeName"),
+			BasicParameters::targets("player", optional: true)
+		]);
+
+		$this->add("gamemode", [
+			BasicParameters::int("gamemode"),
 			BasicParameters::targets("player", optional: true)
 		]);
 
@@ -109,6 +114,204 @@ class Parameter {
 			BasicParameters::string("item : data(optional)"),
 			BasicParameters::int("amount", optional: true),
 			BasicParameters::json("nbt", optional: true)
+		]);
+
+		$this->add("effect", [
+			BasicParameters::targets("player"),
+			BasicParameters::string("effectName"),
+			BasicParameters::float("duration", optional: true),
+			BasicParameters::int("amplifier", optional: true),
+			BasicParameters::string("showParticles", optional: true)
+		]);
+
+		$this->add("whitelist", [
+			BasicParameters::enum("add", "add"),
+			BasicParameters::string("playerName")
+		]);
+
+		$this->add("whitelist", [
+			BasicParameters::enum("add", "add"),
+			BasicParameters::targets("playerName")
+		]);
+
+		$this->add("whitelist", [
+			BasicParameters::enum("remove", "remove"),
+			BasicParameters::string("playerName")
+		]);
+
+		$this->add("whitelist", [
+			BasicParameters::enum("remove", "remove"),
+			BasicParameters::targets("playerName")
+		]);
+
+		$this->add("whitelist", [
+			BasicParameters::enum("on", "on")
+		]);
+
+		$this->add("whitelist", [
+			BasicParameters::enum("off", "off")
+		]);
+
+		$this->add("whitelist", [
+			BasicParameters::enum("reload", "reload")
+		]);
+
+		$this->add("whitelist", [
+			BasicParameters::enum("list", "list")
+		]);
+
+		$this->add("transferserver", [
+			BasicParameters::string("server"),
+			BasicParameters::int("port", optional: true)
+		]);
+
+		$this->add("title", [
+			BasicParameters::targets("player"),
+			BasicParameters::enum("clear", "clear")
+		]);
+
+		$this->add("title", [
+			BasicParameters::targets("player"),
+			BasicParameters::enum("reset", "reset")
+		]);
+
+		$this->add("title", [
+			BasicParameters::targets("player"),
+			BasicParameters::enum("title", "title"),
+			BasicParameters::message("message")
+		]);
+
+		$this->add("title", [
+			BasicParameters::targets("player"),
+			BasicParameters::enum("subtitle", "subtitle"),
+			BasicParameters::message("message")
+		]);
+
+		$this->add("title", [
+			BasicParameters::targets("player"),
+			BasicParameters::enum("actionbar", "actionbar"),
+			BasicParameters::message("message")
+		]);
+
+		$this->add("title", [
+			BasicParameters::targets("player"),
+			BasicParameters::enum("times", "times"),
+			BasicParameters::int("fadeIn"),
+			BasicParameters::int("length"),
+			BasicParameters::int("fadeOut")
+		]);
+
+		$this->add("tell", [
+			BasicParameters::targets("player"),
+			BasicParameters::message("message")
+		]);
+
+		$this->add("timings", [
+			BasicParameters::enum("reset", "reset")
+		]);
+
+		$this->add("timings", [
+			BasicParameters::enum("report", "report")
+		]);
+
+		$this->add("timings", [
+			BasicParameters::enum("on", "on")
+		]);
+
+		$this->add("timings", [
+			BasicParameters::enum("off", "off")
+		]);
+
+		$this->add("timings", [
+			BasicParameters::enum("paste", "paste")
+		]);
+
+		$this->add("spawnpoint", [
+			BasicParameters::targets("player", optional: true),
+			BasicParameters::position("position", optional: true)
+		]);
+
+		$this->add("setworldspawn", [
+			BasicParameters::position("position", optional: true)
+		]);
+
+		$this->add("say", [
+			BasicParameters::message("message")
+		]);
+
+		$this->add("particle", [
+			BasicParameters::string("particleName"),
+			BasicParameters::position("position"),
+			BasicParameters::position("size"),
+			BasicParameters::int("amount", optional: true),
+			BasicParameters::int("data", optional: true)
+		]);
+
+		$this->add("pardon", [
+			BasicParameters::string("playerName")
+		]);
+
+		$this->add("pardon-ip", [
+			BasicParameters::string("address")
+		]);
+
+		$this->add("op", [
+			BasicParameters::targets("playerName")
+		]);
+
+		$this->add("op", [
+			BasicParameters::string("playerName")
+		]);
+
+		$this->add("me", [
+			BasicParameters::message("action")
+		]);
+
+		$this->add("difficulty", [
+			BasicParameters::string("difficultyName")
+		]);
+
+		$this->add("difficulty", [
+			BasicParameters::int("difficulty")
+		]);
+
+		$this->add("deop", [
+			BasicParameters::targets("playerName")
+		]);
+
+		$this->add("deop", [
+			BasicParameters::string("playerName")
+		]);
+
+		$this->add("defaultgamemode", [
+			BasicParameters::string("gamemodeName")
+		]);
+
+		$this->add("defaultgamemode", [
+			BasicParameters::int("gamemode")
+		]);
+
+		$this->add("ban", [
+			BasicParameters::targets("victim"),
+			BasicParameters::message("reason", optional: true)
+		]);
+
+		$this->add("ban", [
+			BasicParameters::string("victimName"),
+			BasicParameters::message("reason", optional: true)
+		]);
+
+		$this->add("ban-ip", [
+			BasicParameters::string("address"),
+			BasicParameters::message("reason", optional: true)
+		]);
+
+		$this->add("banlist", [
+			BasicParameters::enum("ips", "ips", optional: true)
+		]);
+
+		$this->add("banlist", [
+			BasicParameters::enum("players", "players", optional: true)
 		]);
 	}
 
