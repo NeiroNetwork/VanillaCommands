@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace NeiroNetwork\VanillaCommands\parameter;
 
+use pocketmine\item\ItemFactory;
+use pocketmine\item\LegacyStringToItemParser;
 use pocketmine\network\mcpe\protocol\AvailableCommandsPacket;
 use pocketmine\network\mcpe\protocol\types\command\CommandEnum;
 use pocketmine\network\mcpe\protocol\types\command\CommandParameter;
@@ -12,6 +14,19 @@ use pocketmine\utils\CloningRegistryTrait;
 class BasicParameters {
 	#use CloningRegistryTrait;
 
+	/**
+	 * @var string[]
+	 */
+	protected static array $itemNames = [];
+
+	public static function init(): void {
+		if (empty(self::$itemNames)) {
+			$map = LegacyStringToItemParser::getInstance()->getMappings();
+			self::$itemNames = array_filter(array_keys($map), function (string $item): bool {
+				return !is_numeric($item);
+			});
+		}
+	}
 
 
 	public static function targets(string $paramName, int $flags = 0, bool $optional = false): CommandParameter {
@@ -34,9 +49,8 @@ class BasicParameters {
 		return CommandParameter::standard($paramName, AvailableCommandsPacket::ARG_TYPE_STRING, $flags, $optional);
 	}
 
-	public static function item(string $paramName, int $flags = 0, bool $optional = false): CommandParameter {
-		return CommandParameter::standard($paramName, AvailableCommandsPacket::ARG_TYPE_STRING, $flags, $optional);
-		# Item がない...!?
+	public static function item(string $name, string $enumName, int $flags = 1, bool $optional = false): CommandParameter {
+		return self::enum($name, $enumName, self::$itemNames, $flags, $optional);
 	}
 
 	public static function message(string $paramName, int $flags = 0, bool $optional = false): CommandParameter {

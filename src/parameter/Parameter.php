@@ -27,13 +27,15 @@ class Parameter {
 	public function __construct() {
 		$this->list = [];
 
+		BasicParameters::init();
+
 		$this->add("kill", [
 			BasicParameters::targets("target", optional: true)
 		]);
 
 		$this->add("clear", [
 			BasicParameters::targets("player", optional: true),
-			BasicParameters::item("itemName", optional: true),
+			BasicParameters::item("itemName", "item", optional: true),
 			BasicParameters::int("data", optional: true),
 			BasicParameters::int("maxCount", optional: true)
 		]);
@@ -50,7 +52,12 @@ class Parameter {
 
 		$this->add("time", [
 			BasicParameters::enum("set", "set"),
-			BasicParameters::merge(BasicParameters::string("time"), AvailableCommandsPacket::ARG_TYPE_INT)
+			BasicParameters::enum("time", "time", ["day", "noon", "sunset", "night", "midnight", "sunrise"])
+		]);
+
+		$this->add("time", [
+			BasicParameters::enum("set", "set"),
+			BasicParameters::int("time")
 		]);
 
 		$this->add("time", [
@@ -111,7 +118,7 @@ class Parameter {
 
 		$this->add("give", [
 			BasicParameters::targets("player"),
-			BasicParameters::string("item : data(optional)"),
+			BasicParameters::item("item : data(optional)", "item"),
 			BasicParameters::int("amount", optional: true),
 			BasicParameters::json("nbt", optional: true)
 		]);
