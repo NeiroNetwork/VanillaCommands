@@ -65,10 +65,13 @@ class Selector {
 		$this->register(self::TYPE_RANDOM, function (CommandSender $sender, string $section): array {
 			if ($sender instanceof Player) {
 				$players = $sender->getWorld()->getPlayers();
-				if (count($players) > 0) {
-					$player = $players[array_rand($players)];
-					return [$player];
-				}
+			} else {
+				$players = $sender->getServer()->getOnlinePlayers();
+			}
+
+			if (count($players) > 0) {
+				$player = $players[array_rand($players)];
+				return [$player];
 			}
 
 			return [];
