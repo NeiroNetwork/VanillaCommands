@@ -4,11 +4,13 @@ declare(strict_types=1);
 
 namespace NeiroNetwork\VanillaCommands\selector\handler;
 
+use NeiroNetwork\VanillaCommands\PermissionNames;
 use NeiroNetwork\VanillaCommands\selector\Selector;
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
 use pocketmine\network\mcpe\NetworkSession;
 use pocketmine\player\Player;
+use pocketmine\Server;
 
 class SelectorHandler {
 
@@ -22,6 +24,9 @@ class SelectorHandler {
 	 */
 	public function handle(CommandSender $sender, string $commandName, array $args, array $all): bool {
 		$base = $commandName;
+		if (!$sender->hasPermission(PermissionNames::SELECTOR)) {
+			return false;
+		}
 		$argCount = count($args);
 		$allCount = count($all);
 		if ($allCount !== $argCount) {

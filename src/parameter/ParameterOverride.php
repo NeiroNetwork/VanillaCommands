@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace NeiroNetwork\VanillaCommands\parameter;
 
+use NeiroNetwork\VanillaCommands\PermissionNames;
 use pocketmine\network\mcpe\NetworkSession;
 use pocketmine\network\mcpe\protocol\AvailableCommandsPacket;
 use pocketmine\network\mcpe\protocol\types\command\CommandData;
