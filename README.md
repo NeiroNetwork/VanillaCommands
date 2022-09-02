@@ -20,4 +20,8 @@
 ### Give コマンド
 ![give](https://user-images.githubusercontent.com/70795425/185127874-8358c8cc-9c61-4879-b3fb-4ff598c74553.png)
 
+
+## 拡張
+その他API？ほかプラグインから使用できる関数も提供しています
+`Parameter::add`など
 etc..
