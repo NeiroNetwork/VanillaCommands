@@ -23,6 +23,10 @@ class SelectorHandler {
 	 * @return void
 	 */
 	public function handle(CommandSender $sender, string $commandName, array $args, array $all): bool {
+		if (!preg_match("/^[a-zA-Z0-9]+$/", $commandName)) {
+			return false;
+		}
+
 		$base = $commandName;
 		if (!$sender->hasPermission(PermissionNames::SELECTOR)) {
 			return false;
