@@ -1,5 +1,5 @@
 name: VanillaCommands
-version: 1.0.0
+version: 1.0.1
 main: NeiroNetwork\VanillaCommands\Main
-api: 4.0.0
+api: [4.0.0, 5.0.0]
 src-namespace-prefix: NeiroNetwork\VanillaCommands

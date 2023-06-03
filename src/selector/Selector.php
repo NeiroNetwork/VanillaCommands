@@ -49,7 +49,6 @@ class Selector {
 			} else {
 				return $sender->getServer()->getOnlinePlayers();
 			}
-			return [];
 		});
 
 		$this->register(self::TYPE_NEAREST_PLAYER, function (CommandSender $sender, string $section): array {
