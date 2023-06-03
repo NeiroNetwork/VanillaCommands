@@ -14,7 +14,7 @@ class ParameterOverride {
 	public function __construct() {
 	}
 
-	public function doOverride(AvailableCommandsPacket $packet, NetworkSession $target) {
+	public function doOverride(AvailableCommandsPacket $packet, NetworkSession $target) : void{
 		foreach ($packet->commandData as $name => $commandData) {
 			$this->overrideParameter($commandData);
 		}

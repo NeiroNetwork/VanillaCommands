@@ -25,7 +25,7 @@ class EventListener implements Listener {
 		$this->selectorHandler = new SelectorHandler();
 	}
 
-	public function onDataPacketSend(DataPacketSendEvent $event) {
+	public function onDataPacketSend(DataPacketSendEvent $event) : void{
 		$packets = $event->getPackets();
 		$targets = $event->getTargets();
 
@@ -39,7 +39,7 @@ class EventListener implements Listener {
 		}
 	}
 
-	public function onCommand(CommandEvent $event) {
+	public function onCommand(CommandEvent $event) : void{
 		$message = $event->getCommand();
 		$sender = $event->getSender();
 
