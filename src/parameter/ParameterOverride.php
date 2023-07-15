@@ -8,6 +8,7 @@ use NeiroNetwork\VanillaCommands\PermissionNames;
 use pocketmine\network\mcpe\NetworkSession;
 use pocketmine\network\mcpe\protocol\AvailableCommandsPacket;
 use pocketmine\network\mcpe\protocol\types\command\CommandData;
+use pocketmine\network\mcpe\protocol\types\command\CommandOverload;
 
 class ParameterOverride {
 
@@ -23,7 +24,7 @@ class ParameterOverride {
 	public function overrideParameter(CommandData $commandData): bool {
 		$parameters = Parameter::getInstance()->get($commandData->getName());
 		if ($parameters !== null) {
-			$commandData->overloads = $parameters; #大丈夫かな
+			$commandData->overloads = array_map(fn($p) => new CommandOverload(false, $p), $parameters);
 
 			return true;
 		}
