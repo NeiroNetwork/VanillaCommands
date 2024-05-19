@@ -8,6 +8,7 @@ use NeiroNetwork\VanillaCommands\PermissionNames;
 use pocketmine\network\mcpe\NetworkSession;
 use pocketmine\network\mcpe\protocol\AvailableCommandsPacket;
 use pocketmine\network\mcpe\protocol\types\command\CommandData;
+use pocketmine\network\mcpe\protocol\types\command\CommandOverload;
 
 class ParameterOverride {
 
