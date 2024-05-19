@@ -23,7 +23,7 @@ class ParameterOverride {
 	public function overrideParameter(CommandData $commandData): bool {
 		$parameters = Parameter::getInstance()->get($commandData->getName());
 		if ($parameters !== null) {
-			$commandData->overloads = $parameters; #大丈夫かな
+			$commandData->overloads = array_map(fn($data) => new CommandOverload(false, $data), $parameters);
 
 			return true;
 		}
